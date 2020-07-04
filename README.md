@@ -20,7 +20,7 @@
  - The table should now be empty and all the data should be in csv format in the output.csv file with an added header row containing the keys.
 
  ## Final considerations
- The current solution does little to no error handling, which should be improved for stability and useability. The validation of correct copying to a file is solely done by the errors from the npm modules, so further validation could be done in order to ensure that no errors mean data integrity. The solution overrides the output file, so the output file should be a new file or using with caution on existing files.
+ The current solution does little to no error handling, which should be improved for stability and useability. The validation of correct copying to a file is solely done by the errors from the npm modules, which should give errors if any issues occur. Since the modules will give errors if something with the SQL query or the file creation/writing the solution should ensure data integrity, but further validation could be implemented. The solution overrides the output file, so the output file should be a new file or using with caution on existing files.
 
 
 # ORIGINAL README BELOW
