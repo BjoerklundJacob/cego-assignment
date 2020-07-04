@@ -1,0 +1,23 @@
+{
+  "name": "solution",
+  "version": "1.0.0",
+  "description": "The solution moves the content from a MySQL database to a file and deletes the content from the table.",
+  "main": "solution.js",
+  "scripts": {
+    "test": "node solution.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cego/interview-assignment.git"
+  },
+  "author": "Jacob Bjørklund",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cego/interview-assignment/issues"
+  },
+  "homepage": "https://github.com/cego/interview-assignment#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "mysql": "^2.18.1"
+  }
+}
