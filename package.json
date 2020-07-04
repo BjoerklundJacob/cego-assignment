@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cego/interview-assignment.git"
+    "url": "git+https://github.com/BjoerklundJacob/cego-assignment.git"
   },
   "author": "Jacob Bjørklund",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cego/interview-assignment/issues"
+    "url": "https://github.com/BjoerklundJacob/cego-assignment/issues"
   },
-  "homepage": "https://github.com/cego/interview-assignment#readme",
+  "homepage": "https://github.com/BjoerklundJacob/cego-assignment#readme",
   "dependencies": {
     "fs": "0.0.1-security",
     "mysql": "^2.18.1"
