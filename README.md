@@ -1,6 +1,9 @@
 # Job interview assignment solution
+ The solution copies a table specified in config.js to a output file and validates the data. 
+ If the data is copied correct, the table is dropped. 
+ See 'How to use' section for how to run the program.
  ## Necesary installations
- - [Node.js](https://nodejs.org/) - Solution is made with Node.js v12.14.1
+ - [Node.js](https://nodejs.org/) - Solution is made with Node.js v14.16.0
 
  ## Dependencies
  - [mysql](https://www.npmjs.com/package/mysql)
@@ -11,17 +14,24 @@
  ``` 
 
  ## How to use
- - Set up a localhost MySQL database from the sqldump file and modify the options in MYSQL.createPool on line 5-11 in solution.js if needed.
- - Install all dependencies as descriped in dependency section.
+ - Install all necesary installations and dependencies as descriped in dependency section.
+ - Set up a database and modify config.js to match the database configurations.
  - Run the solution using 
+   ```bash
+   node setup.js
+   ```
+   followed by 
    ```bash
    node solution.js
    ```
- - The table should now be empty and all the data should be in csv format in the output.csv file with an added header row containing the keys.
+   or simply run the 
+   ```
+   ./test.bat
+   ```
 
  ## Final considerations
- The current solution does little to no error handling, which should be improved for stability and useability. The validation of correct copying to a file is solely done by the errors from the npm modules, which should give errors if any issues occur. Since the modules will give errors if something with the SQL query or the file creation/writing the solution should ensure data integrity, but further validation could be implemented. The solution overrides the output file, so the output file should be a new file or using with caution on existing files.
-
+ ### Security concerns
+ Login credentials should not be placed where they are publicly available.
 
 # ORIGINAL README BELOW
 
