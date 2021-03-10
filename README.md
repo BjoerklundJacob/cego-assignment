@@ -33,7 +33,8 @@
  ### Security concerns
  Login credentials should not be placed where they are publicly available.
  ### Next steps
- Better error message if the connection to the database cannot be established.
+ - Better error message if the connection to the database cannot be established.
+ - Setup automatic testing.
 
 # ORIGINAL README BELOW
 
