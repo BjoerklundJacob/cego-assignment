@@ -15,7 +15,7 @@
 
  ## How to use
  - Install all necesary installations and dependencies as descriped in dependency section.
- - Set up a database and modify config.js to match the database configurations.
+ - Set up a mysql database and modify config.js to match the database configurations.
  - Run the solution using 
    ```bash
    node setup.js
@@ -32,6 +32,8 @@
  ## Final considerations
  ### Security concerns
  Login credentials should not be placed where they are publicly available.
+ ### Next steps
+ Better error message if the connection to the database cannot be established.
 
 # ORIGINAL README BELOW
 

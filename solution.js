@@ -18,5 +18,5 @@ database.copyToFile(pool, config.test).then( result => {
 }).catch( error => {
   console.log("FAILED!");
   console.log(error);
-  pool.end().catch(console.log);
+  pool.end(console.log);
 });
