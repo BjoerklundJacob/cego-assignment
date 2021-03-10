@@ -66,7 +66,7 @@ async function copyInBatches(pool, table, outputFile, batchSize){
     let offset = 0;
     do{
         results = await copyRows(pool, table, outputFile, batchSize, offset);
-        offset += results;
+        offset += results.length;
         //Validate that it was copied correct
         if(!validate(results, outputFile)){
             throw new Error("Copying to file failed. Data got corrupted.");

@@ -9,7 +9,7 @@ const config = {
     test: {
         table: "users",
         outputFile: "output.csv",
-        batchSize: 1000//<= 0 means full set at once
+        batchSize: 10//<= 0 means full set at once
     }
 }
 
